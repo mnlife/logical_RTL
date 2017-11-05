@@ -1,0 +1,35 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/rec_spi_process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/inv_spi_process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/IMC_Bus.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/tx_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/tx_control_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/tx_bps_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/rx_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/rx_detect_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/rx_control_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/series_module {G:/verlog/logical_RTL/series_module/rx_bps_module.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/Clock_Process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/SPI_Slaver.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/logical_RTL.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/PWM_DeadTime_Produce.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/INV_PWM_Process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/REC_PWM_Process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL {G:/verlog/logical_RTL/fan_pwm_process.v}
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/db {G:/verlog/logical_RTL/db/clock_process_altpll.v}
+
+vlog -vlog01compat -work work +incdir+G:/verlog/logical_RTL/simulation/modelsim {G:/verlog/logical_RTL/simulation/modelsim/logical_RTL.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  logical_RTL_simulation
+
+#add wave *
+#view structure
+#view signals
+run 1 us
+quit -f

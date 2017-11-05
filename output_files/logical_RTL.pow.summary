@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Fri Nov 03 14:21:50 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : logical_RTL
+Top-level Entity Name : logical_RTL
+Family : MAX 10
+Device : 10M04SCE144I7G
+Power Models : Final
+Total Thermal Power Dissipation : 272.11 mW
+Core Dynamic Thermal Power Dissipation : 75.23 mW
+Core Static Thermal Power Dissipation : 124.41 mW
+I/O Thermal Power Dissipation : 72.47 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at REC_PWM_Process.v(50): always construct contains both blocking and non-blocking assignments File: G:/verlog/logical_RTL/REC_PWM_Process.v Line: 50

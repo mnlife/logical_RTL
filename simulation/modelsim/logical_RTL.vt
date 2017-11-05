@@ -1,0 +1,233 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "10/05/2017 19:49:03"
+                                                                                
+// Verilog Test Bench template for design : logical_RTL
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module logical_RTL_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg AUX_Fault;
+reg CHG_Pwm1;
+reg CHG_Pwm2;
+reg CLK;
+reg DCBUS_OV;
+reg EPO;
+reg FAN_Fault;
+reg IAN_LMT;
+reg IAP_LMT;
+reg IBN_LMT;
+reg IBP_LMT;
+reg ICN_LMT;
+reg ICP_LMT;
+reg IGBT_Temp_OV;
+reg IchgN_LMT;
+reg IchgP_LMT;
+reg Inv_CrossZero_U;
+reg Inv_CrossZero_V;
+reg Inv_CrossZero_W;
+reg Inv_FuseFault;
+reg Inv_HeatSink_OVTemp;
+reg Inv_Pwm_LMTU;
+reg Inv_Pwm_LMTV;
+reg Inv_Pwm_LMTW;
+reg Inv_Pwm_U;
+reg Inv_Pwm_V;
+reg Inv_Pwm_W;
+reg Inv_SPICLK;
+reg Inv_SPISIMO;
+reg Inv_SPISTE;
+reg Module_Ready;
+reg RSTn;
+reg RecCharger_OV;
+reg Rec_BoostSCR_OVTemp;
+reg Rec_Charger_OVTemp;
+reg Rec_HeatSink_OVTemp;
+reg Rec_Pwm1;
+reg Rec_Pwm2;
+reg Rec_Pwm3;
+reg Rec_Pwm4;
+reg Rec_Pwm5;
+reg Rec_Pwm6;
+reg Rec_SCIRX;
+reg Rec_SPICLK;
+reg Rec_SPISIMO;
+reg Rec_SPISTE;
+reg SER_BUS_RX;
+reg Vout_CrossZero;
+// wires                                               
+wire BAT_SCR;
+wire CHGN_SCR;
+wire CHGP_SCR;
+wire CHGPwm_N;
+wire CHGPwm_P;
+wire FAN_Pwm;
+wire Inv_KM_DR;
+wire Inv_Pwm_U1;
+wire Inv_Pwm_U2;
+wire Inv_Pwm_U3;
+wire Inv_Pwm_U4;
+wire Inv_Pwm_V1;
+wire Inv_Pwm_V2;
+wire Inv_Pwm_V3;
+wire Inv_Pwm_V4;
+wire Inv_Pwm_W1;
+wire Inv_Pwm_W2;
+wire Inv_Pwm_W3;
+wire Inv_Pwm_W4;
+wire Inv_SPISOMI;
+wire Inv_STS_DR;
+wire LBS_SYNC;
+wire ModuleOK_LED;
+wire Module_Alarm_LED;
+wire RecSCR_AN;
+wire RecSCR_AP;
+wire RecSCR_BN;
+wire RecSCR_BP;
+wire RecSCR_CN;
+wire RecSCR_CP;
+wire Rec_Pwm_AN;
+wire Rec_Pwm_AP;
+wire Rec_Pwm_BN;
+wire Rec_Pwm_BP;
+wire Rec_Pwm_CN;
+wire Rec_Pwm_CP;
+wire Rec_SCITX;
+wire Rec_SPISOMI;
+wire SER_BUS_TX;
+
+// assign statements (if any)                          
+logical_RTL i1 (
+// port map - connection between master ports and signals/registers   
+	.AUX_Fault(AUX_Fault),
+	.BAT_SCR(BAT_SCR),
+	.CHGN_SCR(CHGN_SCR),
+	.CHGP_SCR(CHGP_SCR),
+	.CHGPwm_N(CHGPwm_N),
+	.CHGPwm_P(CHGPwm_P),
+	.CHG_Pwm1(CHG_Pwm1),
+	.CHG_Pwm2(CHG_Pwm2),
+	.CLK(CLK),
+	.DCBUS_OV(DCBUS_OV),
+	.EPO(EPO),
+	.FAN_Fault(FAN_Fault),
+	.FAN_Pwm(FAN_Pwm),
+	.IAN_LMT(IAN_LMT),
+	.IAP_LMT(IAP_LMT),
+	.IBN_LMT(IBN_LMT),
+	.IBP_LMT(IBP_LMT),
+	.ICN_LMT(ICN_LMT),
+	.ICP_LMT(ICP_LMT),
+	.IGBT_Temp_OV(IGBT_Temp_OV),
+	.IchgN_LMT(IchgN_LMT),
+	.IchgP_LMT(IchgP_LMT),
+	.Inv_CrossZero_U(Inv_CrossZero_U),
+	.Inv_CrossZero_V(Inv_CrossZero_V),
+	.Inv_CrossZero_W(Inv_CrossZero_W),
+	.Inv_FuseFault(Inv_FuseFault),
+	.Inv_HeatSink_OVTemp(Inv_HeatSink_OVTemp),
+	.Inv_KM_DR(Inv_KM_DR),
+	.Inv_Pwm_LMTU(Inv_Pwm_LMTU),
+	.Inv_Pwm_LMTV(Inv_Pwm_LMTV),
+	.Inv_Pwm_LMTW(Inv_Pwm_LMTW),
+	.Inv_Pwm_U(Inv_Pwm_U),
+	.Inv_Pwm_U1(Inv_Pwm_U1),
+	.Inv_Pwm_U2(Inv_Pwm_U2),
+	.Inv_Pwm_U3(Inv_Pwm_U3),
+	.Inv_Pwm_U4(Inv_Pwm_U4),
+	.Inv_Pwm_V(Inv_Pwm_V),
+	.Inv_Pwm_V1(Inv_Pwm_V1),
+	.Inv_Pwm_V2(Inv_Pwm_V2),
+	.Inv_Pwm_V3(Inv_Pwm_V3),
+	.Inv_Pwm_V4(Inv_Pwm_V4),
+	.Inv_Pwm_W(Inv_Pwm_W),
+	.Inv_Pwm_W1(Inv_Pwm_W1),
+	.Inv_Pwm_W2(Inv_Pwm_W2),
+	.Inv_Pwm_W3(Inv_Pwm_W3),
+	.Inv_Pwm_W4(Inv_Pwm_W4),
+	.Inv_SPICLK(Inv_SPICLK),
+	.Inv_SPISIMO(Inv_SPISIMO),
+	.Inv_SPISOMI(Inv_SPISOMI),
+	.Inv_SPISTE(Inv_SPISTE),
+	.Inv_STS_DR(Inv_STS_DR),
+	.LBS_SYNC(LBS_SYNC),
+	.ModuleOK_LED(ModuleOK_LED),
+	.Module_Alarm_LED(Module_Alarm_LED),
+	.Module_Ready(Module_Ready),
+	.RSTn(RSTn),
+	.RecCharger_OV(RecCharger_OV),
+	.RecSCR_AN(RecSCR_AN),
+	.RecSCR_AP(RecSCR_AP),
+	.RecSCR_BN(RecSCR_BN),
+	.RecSCR_BP(RecSCR_BP),
+	.RecSCR_CN(RecSCR_CN),
+	.RecSCR_CP(RecSCR_CP),
+	.Rec_BoostSCR_OVTemp(Rec_BoostSCR_OVTemp),
+	.Rec_Charger_OVTemp(Rec_Charger_OVTemp),
+	.Rec_HeatSink_OVTemp(Rec_HeatSink_OVTemp),
+	.Rec_Pwm1(Rec_Pwm1),
+	.Rec_Pwm2(Rec_Pwm2),
+	.Rec_Pwm3(Rec_Pwm3),
+	.Rec_Pwm4(Rec_Pwm4),
+	.Rec_Pwm5(Rec_Pwm5),
+	.Rec_Pwm6(Rec_Pwm6),
+	.Rec_Pwm_AN(Rec_Pwm_AN),
+	.Rec_Pwm_AP(Rec_Pwm_AP),
+	.Rec_Pwm_BN(Rec_Pwm_BN),
+	.Rec_Pwm_BP(Rec_Pwm_BP),
+	.Rec_Pwm_CN(Rec_Pwm_CN),
+	.Rec_Pwm_CP(Rec_Pwm_CP),
+	.Rec_SCIRX(Rec_SCIRX),
+	.Rec_SCITX(Rec_SCITX),
+	.Rec_SPICLK(Rec_SPICLK),
+	.Rec_SPISIMO(Rec_SPISIMO),
+	.Rec_SPISOMI(Rec_SPISOMI),
+	.Rec_SPISTE(Rec_SPISTE),
+	.SER_BUS_RX(SER_BUS_RX),
+	.SER_BUS_TX(SER_BUS_TX),
+	.Vout_CrossZero(Vout_CrossZero)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

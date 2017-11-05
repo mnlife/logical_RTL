@@ -1,0 +1,76 @@
+
+State Machine - |logical_RTL|rec_spi_process:rec_spi_signal|spi:Rec_SPI_Process|txd_state
+Name txd_state.1111 txd_state.1110 txd_state.1101 txd_state.1100 txd_state.1011 txd_state.1010 txd_state.1001 txd_state.1000 txd_state.0111 txd_state.0110 txd_state.0101 txd_state.0100 txd_state.0011 txd_state.0010 txd_state.0001 txd_state.0000 
+txd_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+txd_state.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+txd_state.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+txd_state.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+txd_state.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+txd_state.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+txd_state.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+txd_state.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+txd_state.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+txd_state.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+txd_state.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+txd_state.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |logical_RTL|rec_spi_process:rec_spi_signal|spi:Rec_SPI_Process|rxd_state
+Name rxd_state.1111 rxd_state.1110 rxd_state.1101 rxd_state.1100 rxd_state.1011 rxd_state.1010 rxd_state.1001 rxd_state.1000 rxd_state.0111 rxd_state.0110 rxd_state.0101 rxd_state.0100 rxd_state.0011 rxd_state.0010 rxd_state.0001 rxd_state.0000 
+rxd_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+rxd_state.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+rxd_state.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+rxd_state.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+rxd_state.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+rxd_state.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+rxd_state.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+rxd_state.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+rxd_state.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+rxd_state.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+rxd_state.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |logical_RTL|inv_spi_process:inv_spi_signal|spi:Inv_SPI_Process|txd_state
+Name txd_state.1111 txd_state.1110 txd_state.1101 txd_state.1100 txd_state.1011 txd_state.1010 txd_state.1001 txd_state.1000 txd_state.0111 txd_state.0110 txd_state.0101 txd_state.0100 txd_state.0011 txd_state.0010 txd_state.0001 txd_state.0000 
+txd_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+txd_state.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+txd_state.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+txd_state.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+txd_state.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+txd_state.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+txd_state.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+txd_state.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+txd_state.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+txd_state.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+txd_state.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+txd_state.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+txd_state.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |logical_RTL|inv_spi_process:inv_spi_signal|spi:Inv_SPI_Process|rxd_state
+Name rxd_state.1111 rxd_state.1110 rxd_state.1101 rxd_state.1100 rxd_state.1011 rxd_state.1010 rxd_state.1001 rxd_state.1000 rxd_state.0111 rxd_state.0110 rxd_state.0101 rxd_state.0100 rxd_state.0011 rxd_state.0010 rxd_state.0001 rxd_state.0000 
+rxd_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+rxd_state.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+rxd_state.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+rxd_state.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+rxd_state.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+rxd_state.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+rxd_state.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+rxd_state.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+rxd_state.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+rxd_state.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+rxd_state.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+rxd_state.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

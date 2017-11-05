@@ -1,0 +1,11 @@
+---- start_rx Matches (12 in 3 files) ----
+IMC_Bus.v:	wire	start_rx;
+IMC_Bus.v:		.start_rx(start_rx),
+IMC_Bus.v:				if((!Tx_Transmit_now) && start_rx)
+IMC_Bus.v:				if((!Tx_Transmit_now) && start_rx)
+Rx_control_module.v (series_module):    Count_Sig, Rx_Data, Rx_Done_Sig, Tx_Cancel, start_rx
+Rx_control_module.v (series_module):	 output start_rx;
+Rx_control_module.v (series_module):	 assign	start_rx = rstart_rx;
+Rx_module.v (series_module):	Rx_Done_Sig, Rx_Data, Tx_Cancel, start_rx
+Rx_module.v (series_module):	 output	start_rx;
+Rx_module.v (series_module):		 .start_rx(start_rx)

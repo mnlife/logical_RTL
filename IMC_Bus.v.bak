@@ -1,0 +1,81 @@
+module	IMC_Bus
+(
+    clk_100, RSTn,
+    imc_enable,
+	Tx_Pin_Out,From_IMC_Bus,
+	Rx_Pin_In,To_IMC_Bus
+);
+
+	input	clk_100;
+	input	CLK;
+	input	RSTn;
+	input	imc_enable;
+	
+	output	[31:0] From_IMC_Bus;
+	output	Tx_Pin_Out;
+
+	input	[31:0] To_IMC_Bus;
+	input	Rx_Pin_In;
+
+	reg		Tx_En_Sig;
+	wire	Tx_Cancel;
+	wire	Tx_Done_Sig;
+
+	reg		Rx_En_Sig;
+	wire	Rx_Done_Sig;
+	
+	rx_module	rx_process
+	(
+		.CLK(clk_100),
+		.RSTn(RSTn),
+		.Rx_Pin_In(Rx_Pin_In),
+		.Rx_En_Sig(Rx_En_Sig),
+		.Rx_Done_Sig(Rx_Done_Sig),
+		.Rx_Data(From_IMC_Bus),
+		.Tx_Cancel(Tx_Cancel),
+		.Tx_Data(To_IMC_Bus)
+	);
+
+
+	tx_module	tx_process
+	(
+		.CLK(clk_100);
+		.RSTn(RSTn),
+		.Tx_Pin_Out(Tx_Pin_Out),
+		.Tx_En_Sig(Tx_En_Sig),
+		.Tx_Done_Sig(Tx_Done_Sig),
+		.Tx_Data(To_IMC_Bus),
+		.Tx_Cancel(Tx_Cancel),
+		.Rx_Done_Sig(Rx_Done_Sig)
+	);
+
+	reg		isTxCount;
+	reg		[15:0] Tx_SendPeriod;
+	wire	[15:0] Tx_TimeCount;
+	PWM_DeadTimeProduce	Tx_Dispatch
+	(
+		.clk_100(CLK),
+		.RSTn(RSTn),
+		.isCount(isTxCount),
+		.PWM_DEAD_TIME(Tx_SendPeriod),
+		.DeadTimeCount(Tx_TimeCount)
+	)
+
+	always @ (posedge clk_100 or negedge RSTn)
+		if(!RSTn)
+			begin
+				Tx_En_Sig <= 1'b0;
+				Rx_En_Sig <= 1'b0;
+			end
+		else if(1)//imc_enable)
+			begin
+				Rx_En_Sig <= 1'b1;
+				Tx_SendPeriod <= 16'd20000;
+				isTxCount <= 1;
+				if(Tx_TimeCount== 16'd0)
+					Tx_En_Sig <= 1'b1;
+				if(Tx_Done_Sig)
+					Tx_En_Sig <= 1'b0;
+			end
+			
+endmodule

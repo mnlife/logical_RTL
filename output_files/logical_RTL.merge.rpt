@@ -1,0 +1,697 @@
+Partition Merge report for logical_RTL
+Mon Oct 02 20:48:09 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                          ;
++------------------------------------+---------------------------------------------+
+; Partition Merge Status             ; Successful - Mon Oct 02 20:48:09 2017       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; logical_RTL                                 ;
+; Top-level Entity Name              ; logical_RTL                                 ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 2,396                                       ;
+;     Total combinational functions  ; 1,678                                       ;
+;     Dedicated logic registers      ; 1,689                                       ;
+; Total registers                    ; 1689                                        ;
+; Total pins                         ; 87                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 131,072                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+; Name                                                                           ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                                              ; Details                                                                                  ;
++--------------------------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+; CLK                                                                            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; CLK                                                                            ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[0]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[0]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[0]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[0]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[10] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[10] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[10] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[10] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[11] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[11] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[11] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[11] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[12] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[12] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[12] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[12] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[13] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[13] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[13] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[13] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[14] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[14] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[14] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[14] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[15] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[15] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[15] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[15] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[16] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[16] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[16] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[16] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[17] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[17] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[17] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[17] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[18] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[18] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[18] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[18] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[19] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[19] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[19] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[19] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[1]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[1]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[1]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[1]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[20] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[20] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[20] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[20] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[21] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[21] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[22] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[22] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[23] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[23] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[23] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[23] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[24] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[24] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[24] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[24] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[25] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[25] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[25] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[25] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[26] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[26] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[26] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[26] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[27] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[27] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[28] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[28] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[28] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[28] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[29] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[29] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[29] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[29] ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[2]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[2]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[2]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[2]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[30] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[30] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[31] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[31] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                                                            ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[3]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[3]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[3]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[3]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[4]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[4]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[4]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[4]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[5]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[5]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[5]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[5]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[6]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[6]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[6]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[6]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[7]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[7]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[7]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[7]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[8]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[8]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[8]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[8]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[9]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[9]  ; N/A                                                                                      ;
+; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[9]  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; IMC_Bus:IMC_Signal_Process|rx_module:rx_process|rx_control_module:U3|rData[9]  ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                                           ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                            ; N/A                                                                                      ;
++--------------------------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                    ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top  ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 1325 ; 152              ; 920                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total combinational functions               ; 1087 ; 125              ; 466                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;      ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 479  ; 54               ; 193                            ; 0                              ;
+;     -- 3 input functions                    ; 110  ; 36               ; 143                            ; 0                              ;
+;     -- <=2 input functions                  ; 498  ; 35               ; 130                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Logic elements by mode                      ;      ;                  ;                                ;                                ;
+;     -- normal mode                          ; 723  ; 117              ; 380                            ; 0                              ;
+;     -- arithmetic mode                      ; 364  ; 8                ; 86                             ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total registers                             ; 846  ; 91               ; 752                            ; 0                              ;
+;     -- Dedicated logic registers            ; 846  ; 91               ; 752                            ; 0                              ;
+;     -- I/O registers                        ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Virtual pins                                ; 0    ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 87   ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0    ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 0    ; 0                ; 131072                         ; 0                              ;
+; Total RAM block bits                        ; 0    ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1    ; 0                ; 0                              ; 0                              ;
+; PLL                                         ; 0    ; 0                ; 0                              ; 1                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Connections                                 ;      ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 805  ; 134              ; 1094                           ; 2                              ;
+;     -- Registered Input Connections         ; 804  ; 102              ; 850                            ; 0                              ;
+;     -- Output Connections                   ; 1010 ; 187              ; 34                             ; 804                            ;
+;     -- Registered Output Connections        ; 54   ; 187              ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Internal Connections                        ;      ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 7504 ; 874              ; 4692                           ; 807                            ;
+;     -- Registered Connections               ; 2790 ; 648              ; 3193                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; External Connections                        ;      ;                  ;                                ;                                ;
+;     -- Top                                  ; 0    ; 123              ; 886                            ; 806                            ;
+;     -- sld_hub:auto_hub                     ; 123  ; 20               ; 178                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 886  ; 178              ; 64                             ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 806  ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Partition Interface                         ;      ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 51   ; 45               ; 165                            ; 2                              ;
+;     -- Output Ports                         ; 40   ; 62               ; 79                             ; 1                              ;
+;     -- Bidir Ports                          ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Registered Ports                            ;      ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0    ; 4                ; 70                             ; 0                              ;
+;     -- Registered Output Ports              ; 0    ; 29               ; 65                             ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Port Connectivity                           ;      ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0    ; 0                ; 26                             ; 0                              ;
+;     -- Output Ports driven by GND           ; 0    ; 28               ; 2                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0    ; 0                ; 16                             ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0    ; 0                ; 1                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0    ; 25               ; 36                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0    ; 30               ; 50                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0    ; 29               ; 67                             ; 0                              ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                               ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; Name                              ; Partition ; Type          ; Location ; Status      ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; AUX_Fault                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- AUX_Fault                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- AUX_Fault~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; BAT_SCR                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- BAT_SCR                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- BAT_SCR~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHGN_SCR                          ; Top       ; Output Port   ; n/a      ;             ;
+;     -- CHGN_SCR                   ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- CHGN_SCR~output            ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHGP_SCR                          ; Top       ; Output Port   ; n/a      ;             ;
+;     -- CHGP_SCR                   ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- CHGP_SCR~output            ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHGPwm_N                          ; Top       ; Output Port   ; n/a      ;             ;
+;     -- CHGPwm_N                   ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- CHGPwm_N~output            ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHGPwm_P                          ; Top       ; Output Port   ; n/a      ;             ;
+;     -- CHGPwm_P                   ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- CHGPwm_P~output            ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHG_Pwm1                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CHG_Pwm1                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CHG_Pwm1~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CHG_Pwm2                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CHG_Pwm2                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CHG_Pwm2~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; CLK                               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CLK                        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CLK~input                  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; DCBUS_OV                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- DCBUS_OV                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- DCBUS_OV~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; EPO                               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- EPO                        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- EPO~input                  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; FAN_Fault                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- FAN_Fault                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- FAN_Fault~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; FAN_Pwm                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- FAN_Pwm                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- FAN_Pwm~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IAN_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IAN_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IAN_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IAP_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IAP_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IAP_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IBN_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IBN_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IBN_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IBP_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IBP_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IBP_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; ICN_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- ICN_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- ICN_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; ICP_LMT                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- ICP_LMT                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- ICP_LMT~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IGBT_Temp_OV                      ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IGBT_Temp_OV               ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IGBT_Temp_OV~input         ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IchgN_LMT                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IchgN_LMT                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IchgN_LMT~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; IchgP_LMT                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- IchgP_LMT                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- IchgP_LMT~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_CrossZero_U                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_CrossZero_U            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_CrossZero_U~input      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_CrossZero_V                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_CrossZero_V            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_CrossZero_V~input      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_CrossZero_W                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_CrossZero_W            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_CrossZero_W~input      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_FuseFault                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_FuseFault              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_FuseFault~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_HeatSink_OVTemp               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_HeatSink_OVTemp        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_HeatSink_OVTemp~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_KM_DR                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_KM_DR                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_KM_DR~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_LMTU                      ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_LMTU               ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_LMTU~input         ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_LMTV                      ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_LMTV               ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_LMTV~input         ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_LMTW                      ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_LMTW               ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_LMTW~input         ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_U                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_U                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_U~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_U1                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_U1                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_U1~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_U2                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_U2                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_U2~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_U3                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_U3                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_U3~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_U4                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_U4                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_U4~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_V                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_V                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_V~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_V1                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_V1                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_V1~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_V2                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_V2                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_V2~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_V3                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_V3                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_V3~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_V4                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_V4                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_V4~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_W                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_Pwm_W                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_W~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_W1                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_W1                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_W1~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_W2                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_W2                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_W2~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_W3                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_W3                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_W3~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_Pwm_W4                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_Pwm_W4                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_Pwm_W4~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_SPICLK                        ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_SPICLK                 ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_SPICLK~input           ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_SPISIMO                       ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_SPISIMO                ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_SPISIMO~input          ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_SPISOMI                       ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_SPISOMI                ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_SPISOMI~output         ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_SPISTE                        ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Inv_SPISTE                 ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Inv_SPISTE~input           ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Inv_STS_DR                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Inv_STS_DR                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Inv_STS_DR~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LBS_SYNC                          ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LBS_SYNC                   ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LBS_SYNC~output            ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; ModuleOK_LED                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- ModuleOK_LED               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- ModuleOK_LED~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Module_Alarm_LED                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Module_Alarm_LED           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Module_Alarm_LED~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Module_Ready                      ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Module_Ready               ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Module_Ready~input         ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RSTn                              ; Top       ; Input Port    ; n/a      ;             ;
+;     -- RSTn                       ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- RSTn~input                 ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecCharger_OV                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- RecCharger_OV              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- RecCharger_OV~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_AN                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_AN                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_AN~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_AP                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_AP                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_AP~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_BN                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_BN                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_BN~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_BP                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_BP                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_BP~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_CN                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_CN                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_CN~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; RecSCR_CP                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- RecSCR_CP                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- RecSCR_CP~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_BoostSCR_OVTemp               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_BoostSCR_OVTemp        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_BoostSCR_OVTemp~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Charger_OVTemp                ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Charger_OVTemp         ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Charger_OVTemp~input   ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_HeatSink_OVTemp               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_HeatSink_OVTemp        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_HeatSink_OVTemp~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm1                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm1                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm1~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm2                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm2                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm2~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm3                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm3                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm3~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm4                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm4                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm4~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm5                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm5                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm5~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm6                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_Pwm6                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm6~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_AN                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_AN                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_AN~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_AP                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_AP                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_AP~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_BN                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_BN                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_BN~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_BP                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_BP                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_BP~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_CN                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_CN                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_CN~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_Pwm_CP                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_Pwm_CP                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_Pwm_CP~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SCIRX                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_SCIRX                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_SCIRX~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SCITX                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_SCITX                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_SCITX~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SPICLK                        ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_SPICLK                 ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_SPICLK~input           ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SPISIMO                       ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_SPISIMO                ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_SPISIMO~input          ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SPISOMI                       ; Top       ; Output Port   ; n/a      ;             ;
+;     -- Rec_SPISOMI                ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- Rec_SPISOMI~output         ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Rec_SPISTE                        ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Rec_SPISTE                 ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Rec_SPISTE~input           ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; SER_BUS_RX                        ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SER_BUS_RX                 ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SER_BUS_RX~input           ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; SER_BUS_TX                        ; Top       ; Output Port   ; n/a      ;             ;
+;     -- SER_BUS_TX                 ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- SER_BUS_TX~output          ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; Vout_CrossZero                    ; Top       ; Input Port    ; n/a      ;             ;
+;     -- Vout_CrossZero             ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Vout_CrossZero~input       ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tck               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdi               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdo               ; Top       ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo        ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tms               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
++-----------------------------------+-----------+---------------+----------+-------------+
+
+
++----------------------------------------------------------+
+; Partition Merge Resource Usage Summary                   ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 2,396      ;
+;                                             ;            ;
+; Total combinational functions               ; 1678       ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 726        ;
+;     -- 3 input functions                    ; 289        ;
+;     -- <=2 input functions                  ; 663        ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 1220       ;
+;     -- arithmetic mode                      ; 458        ;
+;                                             ;            ;
+; Total registers                             ; 1689       ;
+;     -- Dedicated logic registers            ; 1689       ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 87         ;
+; Total memory bits                           ; 131072     ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Total PLLs                                  ; 1          ;
+;     -- PLLs                                 ; 1          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; RSTn~input ;
+; Maximum fan-out                             ; 845        ;
+; Total fan-out                               ; 11832      ;
+; Average fan-out                             ; 3.30       ;
++---------------------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_vl14:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 32           ; 4096         ; 32           ; 131072 ; None ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Mon Oct 02 20:48:07 2017
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off logical_RTL -c logical_RTL --merge=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 87 of its 97 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 10 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
+Warning (15899): PLL "Clock_Process:generate_100M_clock|altpll:altpll_component|Clock_Process_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: G:/verlog/logical_RTL/db/clock_process_altpll.v Line: 51
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Vout_CrossZero" File: G:/verlog/logical_RTL/logical_RTL.v Line: 65
+    Warning (15610): No output dependent on input pin "Rec_SCIRX" File: G:/verlog/logical_RTL/logical_RTL.v Line: 152
+Info (21057): Implemented 2563 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 51 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 2438 logic cells
+    Info (21064): Implemented 32 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Partition Merge was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 585 megabytes
+    Info: Processing ended: Mon Oct 02 20:48:09 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

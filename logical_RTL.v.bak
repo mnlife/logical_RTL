@@ -1,0 +1,348 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+module logical_RTL
+(
+	CLK,RSTn,
+	//INV
+	InvPwm_En,Inv_Pwm_U,Inv_Pwm_V,Inv_Pwm_W,
+	Inv_CrossZero_U,Inv_CrossZero_V,Inv_CrossZero_W,
+	Inv_Pwm_U1,Inv_Pwm_U2,Inv_Pwm_U3,Inv_Pwm_U4,
+	Inv_Pwm_V1,Inv_Pwm_V2,Inv_Pwm_V3,Inv_Pwm_V4,	
+	Inv_Pwm_W1,Inv_Pwm_W2,Inv_Pwm_W3,Inv_Pwm_W4,
+	Inv_SPISOMI,Inv_SPISIMO,Inv_SPICLK,Inv_SPISTE,
+	ModuleOK_LED,IGBT_Temp_OV,Module_Ready,LBS_SYNC,
+	EPO,SER_BUS_TX,SER_BUS_RX,AUX_Fault,Inv_STS_DR,
+	Module_Alarm_LED,Inv_KM_DR,Inv_HeatSink_OVTemp,
+	Inv_FuseFault,Inv_Pwm_LMTU,Inv_Pwm_LMTV,Inv_Pwm_LMTW,
+	Vout_CrossZero,
+	//REC
+	IchgN_LMT,IchgP_LMT,Rec_HeatSink_OVTemp,Rec_BoostSCR_OVTemp,Rec_Charger_OVTemp,
+	Rec_SPICLK,Rec_SPISTE,Rec_SPISOMI,Rec_SPISIMO,
+	RecSCR_AP,RecSCR_AN,RecSCR_BP,RecSCR_BN,RecSCR_CP,RecSCR_CN,
+	RecCharger_OV,FAN_Fault,CHGP_SCR,CHGN_SCR,
+	CHG_Pwm1,CHG_Pwm2,CHGPwm_P,CHGPwm_N,FAN_Pwm,Rec_SCIRX,Rec_SCITX,
+	Rec_Pwm1,Rec_Pwm2,Rec_Pwm3,Rec_Pwm4,Rec_Pwm5,Rec_Pwm6,
+	Rec_Pwm_AP,Rec_Pwm_AN,Rec_Pwm_BP,Rec_Pwm_BN,Rec_Pwm_CP,Rec_Pwm_CN,
+	IAP_LMT,IAN_LMT,IBP_LMT,IBN_LMT,ICP_LMT,ICN_LMT,
+	DCBUS_OV,BAT_SCR
+);
+	
+
+
+	input	CLK;
+	input	RSTn;
+/************INV*************/	
+	input	InvPwm_En;			//debugonly
+	input	Inv_Pwm_U;
+	input	Inv_Pwm_V;
+	input	Inv_Pwm_W;
+	
+	input	Inv_CrossZero_U;
+	input	Inv_CrossZero_V;
+	input	Inv_CrossZero_W;
+	
+	input	Inv_SPICLK;
+	input	Inv_SPISTE;
+	input	Inv_SPISIMO;
+	output	Inv_SPISOMI;
+
+	input	Inv_Pwm_LMTU;
+	input	Inv_Pwm_LMTV;
+	input	Inv_Pwm_LMTW;
+	
+	input	Vout_CrossZero;
+	
+	input	ModuleOK_LED;
+	
+	input	IGBT_Temp_OV;
+	input	Inv_HeatSink_OVTemp;	
+	input	Module_Ready;
+
+	input	EPO;
+
+	input	Inv_FuseFault;
+	input	AUX_Fault;
+	
+	output	Inv_Pwm_U1;
+	output	Inv_Pwm_U2;
+	output	Inv_Pwm_U3;
+	output	Inv_Pwm_U4;
+	
+	output	Inv_Pwm_V1;
+	output	Inv_Pwm_V2;
+	output	Inv_Pwm_V3;
+	output	Inv_Pwm_V4;
+	
+	output	Inv_Pwm_W1;
+	output	Inv_Pwm_W2;
+	output	Inv_Pwm_W3;
+	output	Inv_Pwm_W4;
+
+
+	output	LBS_SYNC;
+	
+	input	SER_BUS_RX;
+	output	SER_BUS_TX;
+	
+	output	Inv_KM_DR;
+	output	Inv_STS_DR;
+	
+	output	Module_Alarm_LED;
+	
+/*************REC**********************/
+	input	IchgP_LMT;
+	input	IchgN_LMT;
+	
+	input	Rec_HeatSink_OVTemp;
+	input	Rec_BoostSCR_OVTemp;
+	input	Rec_Charger_OVTemp;
+	input	RecCharger_OV;
+	input	FAN_Fault;
+	
+	input	Rec_SPICLK;
+	input	Rec_SPISTE;
+	input	Rec_SPISIMO;
+	output	Rec_SPISOMI;
+	
+	input	CHG_Pwm1;
+	input	CHG_Pwm2;
+	
+	input	Rec_Pwm1;
+	input	Rec_Pwm2;
+	input	Rec_Pwm3;
+	input	Rec_Pwm4;
+	input	Rec_Pwm5;
+	input	Rec_Pwm6;
+	
+	input	IAP_LMT;
+	input	IAN_LMT;
+	input	IBP_LMT;
+	input	IBN_LMT;
+	input	ICP_LMT;
+	input	ICN_LMT;
+	
+	input	DCBUS_OV;
+
+	output	RecSCR_AP;
+	output	RecSCR_AN;
+	output	RecSCR_BP;
+	output	RecSCR_BN;
+	output	RecSCR_CP;
+	output	RecSCR_CN;
+	output	BAT_SCR;
+	output	CHGP_SCR;
+	output	CHGN_SCR;
+	
+	output	CHGPwm_P;
+	output	CHGPwm_N;
+	
+	output	FAN_Pwm;
+	
+	output	Rec_SCITX;
+	input	Rec_SCIRX;
+	
+	output	Rec_Pwm_AP;
+	output	Rec_Pwm_AN;
+	output	Rec_Pwm_BP;
+	output	Rec_Pwm_BN;
+	output	Rec_Pwm_CP;
+	output	Rec_Pwm_CN;
+	
+/*********************Clock Process********************/
+	wire		clk_100;
+	Clock_Process	generate_100M_clock
+	(
+		.inclk0(CLK),
+		.areset(RSTn),
+		.c0(clk_100)
+	);
+	assign	clk_100 = CLK;
+/***Phase A	Pwm Process***/
+	wire		Inv_Pwm_U1;
+	wire		Inv_Pwm_U2;
+	wire		Inv_Pwm_U3;
+	wire		Inv_Pwm_U4;
+	
+	pwm_deal_frominvdsp	INV_U
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.InvPwm_En(~InvPwm_En),
+		.Inv_Pwm_X(Inv_Pwm_U),
+		.Inv_CrossZero_X(Inv_CrossZero_U),
+		.Inv_Pwm_LMTX(Inv_Pwm_LMTU),
+		.Inv_Pwm_X1(Inv_Pwm_U1),
+		.Inv_Pwm_X2(Inv_Pwm_U2),
+		.Inv_Pwm_X3(Inv_Pwm_U3),
+		.Inv_Pwm_X4(Inv_Pwm_U4)
+	);
+	
+/***Phase B	Pwm Process***/	
+	wire		Inv_Pwm_V1;
+	wire		Inv_Pwm_V2;
+	wire		Inv_Pwm_V3;
+	wire		Inv_Pwm_V4;
+	
+	pwm_deal_frominvdsp	INV_V
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.InvPwm_En(~InvPwm_En),
+		.Inv_Pwm_X(Inv_Pwm_V),
+		.Inv_CrossZero_X(Inv_CrossZero_V),
+		.Inv_Pwm_LMTX(Inv_Pwm_LMTV),
+		.Inv_Pwm_X1(Inv_Pwm_V1),
+		.Inv_Pwm_X2(Inv_Pwm_V2),
+		.Inv_Pwm_X3(Inv_Pwm_V3),
+		.Inv_Pwm_X4(Inv_Pwm_V4)
+	);
+	
+	
+/***Phase C	Pwm Process***/	
+	wire		Inv_Pwm_W1;
+	wire		Inv_Pwm_W2;
+	wire		Inv_Pwm_W3;
+	wire		Inv_Pwm_W4;
+	
+	pwm_deal_frominvdsp	INV_W
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.InvPwm_En(~InvPwm_En),
+		.Inv_Pwm_X(Inv_Pwm_W),
+		.Inv_CrossZero_X(Inv_CrossZero_W),
+		.Inv_Pwm_LMTX(Inv_Pwm_LMTW),
+		.Inv_Pwm_X1(Inv_Pwm_W1),
+		.Inv_Pwm_X2(Inv_Pwm_W2),
+		.Inv_Pwm_X3(Inv_Pwm_W3),
+		.Inv_Pwm_X4(Inv_Pwm_W4)
+	);
+
+
+/**************REC PWM	Process****************/
+	wire	Rec_Pwm_AP;
+	wire	Rec_Pwm_AN;
+	Pwm_Process_From_RECDSP	REC_A
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.PwmEn(~InvPwm_En),
+		.Pwm1(Rec_Pwm1),
+		.Pwm2(Rec_Pwm2),
+		.IP_LMT(IAP_LMT),
+		.IN_LMT(IAN_LMT),
+		.Pwm_P(Rec_Pwm_AP),
+		.Pwm_N(Rec_Pwm_AN)
+	);
+
+	wire	Rec_Pwm_BP;
+	wire	Rec_Pwm_BN;
+	Pwm_Process_From_RECDSP	REC_B
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.PwmEn(~InvPwm_En),
+		.Pwm1(Rec_Pwm3),
+		.Pwm2(Rec_Pwm4),
+		.IP_LMT(IBP_LMT),
+		.IN_LMT(IBN_LMT),
+		.Pwm_P(Rec_Pwm_BP),
+		.Pwm_N(Rec_Pwm_BN)
+	);
+
+	wire	Rec_Pwm_CP;
+	wire	Rec_Pwm_CN;
+	Pwm_Process_From_RECDSP	REC_C
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.PwmEn(~InvPwm_En),
+		.Pwm1(Rec_Pwm5),
+		.Pwm2(Rec_Pwm6),
+		.IP_LMT(ICP_LMT),
+		.IN_LMT(ICN_LMT),
+		.Pwm_P(Rec_Pwm_CP),
+		.Pwm_N(Rec_Pwm_CN)
+	);
+
+	
+/************Charger PWM Process***************/
+	wire	CHGPwm_P;
+	wire	CHGPwm_N;
+	Pwm_Process_From_RECDSP	CHG
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.PwmEn(~InvPwm_En),
+		.Pwm1(CHG_Pwm1),
+		.Pwm2(CHG_Pwm2),
+		.IP_LMT(IchgP_LMT),
+		.IN_LMT(IchgN_LMT),
+		.Pwm_P(CHGPwm_P),
+		.Pwm_N(CHGPwm_N)
+	);
+
+	
+	reg	[15:0] data;
+	wire	[15:0] Inv_txd_data;
+	wire	[15:0] Inv_rxd_data;
+	wire	Inv_rxd_flag;
+	always @(*)
+		begin
+			data <= 16'd43690;
+		end
+	assign Inv_txd_data = data;
+	spi	Inv_SPI_Process
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.SCK(Inv_SPICLK),
+		.SPISIMO(Inv_SPISIMO),
+		.SPISOMI(Inv_SPISOMI),
+		.SPISTE(Inv_SPISTE),
+		.rxd_flag(Inv_rxd_flag),
+		.rxd_data(Inv_rxd_data),
+		.txd_data(Inv_txd_data)
+	);
+
+	wire	[15:0] rec_data_in1;
+	assign	rec_data_in1[0] = RecSCR_AP;
+	assign	rec_data_in1[1] = RecSCR_AN;
+	assign	rec_data_in1[2] = RecSCR_BP;
+	assign	rec_data_in1[3] = RecSCR_BN;
+	assign	rec_data_in1[4] = RecSCR_CP;
+	assign	rec_data_in1[5] = RecSCR_CN;
+	wire	[15:0] rec_data_in2;
+	wire	[15:0] rec_data_out1;
+	wire	[15:0] rec_data_out2;
+
+	wire	[15:0] Rec_txd_data;
+	wire	[15:0] Rec_rxd_data;
+	wire	Rec_rxd_flag;
+//	Rec_txd_data <= 16'd0;
+	spi	Rec_SPI_Process
+	(
+		.clk_100(clk_100),
+		.RSTn(RSTn),
+		.SCK(Rec_SPICLK),
+		.SPISIMO(Rec_SPISIMO),
+		.SPISOMI(Rec_SPISOMI),
+		.SPISTE(Rec_SPISTE),
+		.rxd_flag(Rec_rxd_flag),
+		.rxd_data(Rec_rxd_data),
+		.txd_data(Rec_txd_data)
+	);
+endmodule

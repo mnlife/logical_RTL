@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Nov 03 14:21:31 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : logical_RTL
+Top-level Entity Name : logical_RTL
+Family : MAX 10
+Total logic elements : 2,386
+    Total combinational functions : 1,632
+    Dedicated logic registers : 1,715
+Total registers : 1715
+Total pins : 87
+Total virtual pins : 0
+Total memory bits : 147,456
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,357 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Inv_Pwm_U1",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_U2",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_U3",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_U4",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_V1",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_V2",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_V3",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_V4",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_W1",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_W2",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_W3",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_W4",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_SPISOMI",
+					"strict" : false
+				},
+				{
+					"name" : "ModuleOK_LED",
+					"strict" : false
+				},
+				{
+					"name" : "SER_BUS_TX",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_STS_DR",
+					"strict" : false
+				},
+				{
+					"name" : "Module_Alarm_LED",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_KM_DR",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_SPISOMI",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_AP",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_AN",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_BP",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_BN",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_CP",
+					"strict" : false
+				},
+				{
+					"name" : "RecSCR_CN",
+					"strict" : false
+				},
+				{
+					"name" : "CHGP_SCR",
+					"strict" : false
+				},
+				{
+					"name" : "CHGN_SCR",
+					"strict" : false
+				},
+				{
+					"name" : "CHGPwm_P",
+					"strict" : false
+				},
+				{
+					"name" : "CHGPwm_N",
+					"strict" : false
+				},
+				{
+					"name" : "FAN_Pwm",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_AP",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_AN",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_BP",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_BN",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_CP",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm_CN",
+					"strict" : false
+				},
+				{
+					"name" : "BAT_SCR",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_U",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_LMTU",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_CrossZero_U",
+					"strict" : false
+				},
+				{
+					"name" : "RSTn",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_V",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_LMTV",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_CrossZero_V",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_W",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_Pwm_LMTW",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_CrossZero_W",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_SPISTE",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_SPISTE",
+					"strict" : false
+				},
+				{
+					"name" : "CHG_Pwm1",
+					"strict" : false
+				},
+				{
+					"name" : "CHG_Pwm2",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm1",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm2",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm3",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm4",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm5",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Pwm6",
+					"strict" : false
+				},
+				{
+					"name" : "AUX_Fault",
+					"strict" : false
+				},
+				{
+					"name" : "IGBT_Temp_OV",
+					"strict" : false
+				},
+				{
+					"name" : "DCBUS_OV",
+					"strict" : false
+				},
+				{
+					"name" : "EPO",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_FuseFault",
+					"strict" : false
+				},
+				{
+					"name" : "Module_Ready",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_HeatSink_OVTemp",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_SPICLK",
+					"strict" : false
+				},
+				{
+					"name" : "Inv_SPISIMO",
+					"strict" : false
+				},
+				{
+					"name" : "SER_BUS_RX",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_Charger_OVTemp",
+					"strict" : false
+				},
+				{
+					"name" : "RecCharger_OV",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_HeatSink_OVTemp",
+					"strict" : false
+				},
+				{
+					"name" : "FAN_Fault",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_BoostSCR_OVTemp",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_SPICLK",
+					"strict" : false
+				},
+				{
+					"name" : "Rec_SPISIMO",
+					"strict" : false
+				},
+				{
+					"name" : "IchgP_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "IchgN_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "IAP_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "IAN_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "IBP_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "IBN_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "ICP_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "ICN_LMT",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

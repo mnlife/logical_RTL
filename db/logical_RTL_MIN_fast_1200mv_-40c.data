@@ -1,0 +1,1592 @@
+
+
+
+TIMINGDATA
+
+ARCDATA
+pos_AUX_Fault__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.475");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.475");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CHG_Pwm1__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.161");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.161");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CHG_Pwm2__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.978");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.978");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_DCBUS_OV__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.547");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.547");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_EPO__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.336");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.336");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_FAN_Fault__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.088");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.088");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IAN_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.448");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.448");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IAP_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.194");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.194");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IBN_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.111");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.111");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IBP_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.980");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.980");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_ICN_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.219");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.219");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_ICP_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.138");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.138");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IGBT_Temp_OV__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.544");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.544");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IchgN_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.516");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.516");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IchgP_LMT__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.534");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.534");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_U__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.093");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.093");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_V__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.969");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.969");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_W__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.821");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.821");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_FuseFault__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.449");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.449");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_HeatSink_OVTemp__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.083");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.083");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTU__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.448");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.448");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTV__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.421");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.421");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTW__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.008");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.008");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_U__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.236");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.236");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_V__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.078");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.078");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_W__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.017");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.017");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPICLK__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.955");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.955");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPISIMO__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.454");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.454");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPISTE__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.303");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.303");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Module_Ready__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.403");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.403");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_RSTn__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("4.555");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("4.555");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_RecCharger_OV__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.073");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.073");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_BoostSCR_OVTemp__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.922");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.922");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Charger_OVTemp__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.114");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.114");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_HeatSink_OVTemp__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.989");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.989");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm1__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.291");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.291");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm2__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.121");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.121");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm3__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.992");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.992");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm4__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.006");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.006");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm5__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.889");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.889");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm6__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.033");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.033");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPICLK__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.061");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.061");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPISIMO__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.283");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.283");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPISTE__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.056");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.056");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_SER_BUS_RX__CLK_20M__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("3.051");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("3.051");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tdi__altera_reserved_tck__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.543");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.543");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tms__altera_reserved_tck__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.826");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.826");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_AUX_Fault__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.838");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.838");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CHG_Pwm1__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.792");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.792");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CHG_Pwm2__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.622");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.622");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_DCBUS_OV__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.657");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.657");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_EPO__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.796");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.796");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_FAN_Fault__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.728");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.728");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IAN_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.069");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.069");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IAP_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.825");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.825");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IBN_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.748");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.748");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IBP_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.621");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.621");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_ICN_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.851");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.851");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_ICP_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.773");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.773");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IGBT_Temp_OV__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.907");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.907");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IchgN_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.175");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.175");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_IchgP_LMT__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.152");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.152");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_U__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.105");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.105");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_V__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.020");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.020");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_CrossZero_W__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.803");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.803");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_FuseFault__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.030");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.030");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_HeatSink_OVTemp__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.719");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.719");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTU__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.551");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.551");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTV__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.577");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.577");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_LMTW__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.837");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.837");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_U__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.054");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.054");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_V__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.270");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.270");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_Pwm_W__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.927");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.927");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPICLK__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.595");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.595");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPISIMO__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.852");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.852");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Inv_SPISTE__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.787");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.787");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Module_Ready__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.759");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.759");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_RSTn__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-2.061");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-2.061");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_RecCharger_OV__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.684");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.684");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_BoostSCR_OVTemp__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.568");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.568");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Charger_OVTemp__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.753");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.753");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_HeatSink_OVTemp__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.605");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.605");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm1__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.900");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.900");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm2__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.759");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.759");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm3__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.636");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.636");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm4__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.632");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.632");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm5__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.538");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.538");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_Pwm6__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.675");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.675");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPICLK__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.698");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.698");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPISIMO__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.738");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.738");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_Rec_SPISTE__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.857");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.857");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_SER_BUS_RX__CLK_20M__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.646");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.646");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tdi__altera_reserved_tck__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("0.287");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("0.287");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tms__altera_reserved_tck__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("0.242");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("0.242");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__BAT_SCR__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.677");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.677");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__CHGN_SCR__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.559");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.559");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__CHGP_SCR__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.311");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.311");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__CHGPwm_N__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.353");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.353");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__CHGPwm_P__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.649");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.649");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__FAN_Pwm__delay:
+CELL_RISE( scalar ) {
+VALUES ("5.664");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("5.664");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_KM_DR__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.237");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.237");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_U1__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.326");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.326");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_U2__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.155");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.155");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_U3__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.381");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.381");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_U4__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.192");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.192");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_V1__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.103");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.103");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_V2__delay:
+CELL_RISE( scalar ) {
+VALUES ("4.768");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("4.768");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_V3__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.197");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.197");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_V4__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.308");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.308");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_W1__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.197");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.197");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_W2__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.197");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.197");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_W3__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.213");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.213");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_Pwm_W4__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.212");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.212");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_SPISOMI__delay:
+CELL_RISE( scalar ) {
+VALUES ("4.618");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("4.618");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Inv_STS_DR__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.184");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.184");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__ModuleOK_LED__delay:
+CELL_RISE( scalar ) {
+VALUES ("1.832");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("1.832");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Module_Alarm_LED__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.189");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.189");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_AN__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.317");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.317");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_AP__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.165");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.165");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_BN__delay:
+CELL_RISE( scalar ) {
+VALUES ("4.530");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("4.530");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_BP__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.307");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.307");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_CN__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.337");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.337");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__RecSCR_CP__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.288");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.288");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_AN__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.037");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.037");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_AP__delay:
+CELL_RISE( scalar ) {
+VALUES ("1.919");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("1.919");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_BN__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.174");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.174");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_BP__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.199");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.199");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_CN__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.010");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.010");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_Pwm_CP__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.021");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.021");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__Rec_SPISOMI__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.206");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.206");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_CLK_20M__SER_BUS_TX__delay:
+CELL_RISE( scalar ) {
+VALUES ("2.282");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("2.282");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tck__altera_reserved_tdo__delay:
+CELL_RISE( scalar ) {
+VALUES ("5.368");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("5.368");
+}
+
+ENDARCDATA
+
+ENDTIMINGDATA
+
+ENDMODELDATA

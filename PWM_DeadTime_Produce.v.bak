@@ -1,0 +1,23 @@
+/******************PWM DeadTime Produce Module*****************/
+module PWM_DeadTimeProduce
+(
+	CLK,RSTn,isCount,DeadTimeCount
+);
+	input	CLK;
+	input	RSTn;
+	input	[15:0]DeadTimeCount;
+	input	isCount;
+	
+	parameter	PWM_DEAD_TIME = 16'd40;	//50*40 = 2us
+
+	always @(posedge CLK or negedge RSTn)
+		if(!RSTn)
+			DeadTimeCount <= 16'd0;
+		else if(isCount && DeadTimeCount==PWM_DEAD_TIME)
+			DeadTimeCount <= 16'd0;
+		else if(isNegedgeCount)
+			DeadTimeCount <= eDeadTimeCount+1'b1;
+		else if(!isNegedgeCount)
+			DeadTimeCount <= 16'd0;	
+
+endmodule
